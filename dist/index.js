@@ -357,7 +357,8 @@ async function addUserToTeam(client, username, org, team) {
             role: 'member'
         })
     } catch (e) {
-        core.setFailed(`Failed adding user to team: ${e.message}`)
+        core.error(`Failed adding user ${username} to team ${team}: ${e.message}`)
+        core.setFailed(`Failed adding users to team`)
     }
 }
 

@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add Users
-        uses: lindluni/team-add@1.0.0
+        uses: lindluni/team-add@1.0.1
         with:
           teams: team1,team2,team3
           token: ${{ secrets.GITHUB_ADMIN_PAT }}
