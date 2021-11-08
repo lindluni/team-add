@@ -1,0 +1,21 @@
+{
+  "name": "team-add",
+  "version": "1.0.0",
+  "description": "Sync all users to specific GitHub teams",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@octokit/plugin-retry": "^3.0.9",
+    "@octokit/plugin-throttling": "^3.5.2",
+    "@octokit/rest": "^18.12.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
+}

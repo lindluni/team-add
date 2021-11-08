@@ -1,0 +1,17 @@
+name: 'Add Users to Team'
+author: 'Brett Logan'
+description: 'Automates the addition of users into specific teams'
+inputs:
+  org:
+    description: The GitHub org the teams belong to
+    required: true
+    default: ${{ github.repository_owner }}
+  teams:
+    description: A comma-seperated list of teams to add users to
+    required: true
+  token:
+    description: GitHub Admin PAT to open issues and comment
+    required: true
+runs:
+  using: node12
+  main: dist/index.js
